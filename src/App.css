@@ -1,0 +1,73 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.equation-container {
+  font-size: 72px; /* Increase the font size for the equation */
+}
+
+.correct-answer {
+  animation: rotate 3s linear 1;
+}
+
+.wrong-answer-message {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 32px;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg); /* Start with no rotation */
+  }
+  100% {
+    transform: rotate(360deg); /* Rotate 360 degrees for a full circle */
+  }
+}
+
+input[type="text"] {
+  width: 80%;
+  padding: 12px; /* Increase padding for input */
+  font-size: 20px; /* Increase font size for input */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 0 auto;
+  display: block;
+}
+
+.answer-button {
+  padding: 12px 24px; /* Increase padding for button */
+  font-size: 20px; /* Increase font size for button */
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.new-question-button {
+  padding: 12px 24px; /* Increase padding for button */
+  font-size: 20px; /* Increase font size for button */
+  background-color: red;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.answer-button:hover {
+  background-color: #0056b3;
+}
+
+.new-question-button:hover {
+  background-color: rgb(255, 63, 63);
+}
